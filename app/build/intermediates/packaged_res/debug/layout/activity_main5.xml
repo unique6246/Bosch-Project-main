@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D3A87">
+
+    <!-- Header section with Back, Bosch logo, and Settings -->
+
+    <!-- Place model in your environment button -->
+
+    <!-- See model use cases button -->
+
+    <ImageButton
+        android:id="@+id/place_button"
+        android:layout_width="214dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/group_5"
+        android:text="Place model in your environment"
+        android:textColor="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/model_button"
+        android:layout_width="215dp"
+        android:layout_height="76dp"
+        android:layout_below="@id/place_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="95dp"
+        android:src="@drawable/group_6"
+        android:text="See model use cases"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        app:srcCompat="@drawable/bo" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="70dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="Button"
+        android:alpha="0" />
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="637dp"
+        android:alpha="0"
+        android:text="Button" />
+</RelativeLayout>

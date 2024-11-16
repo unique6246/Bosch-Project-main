@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D3A87">
+
+    <!-- Header section with Back, Bosch logo, and Settings -->
+
+    <!-- Place model in your environment button -->
+    <ImageButton
+        android:id="@+id/some_button"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/group_4"
+        android:text="cool buton"
+        android:textColor="#FFFFFF"
+        android:contentDescription="cool"/>
+
+    <!-- See model use cases button -->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        app:srcCompat="@drawable/bo" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="637dp"
+        android:alpha="0"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="631dp"
+        android:alpha="0"
+        android:text="Button" />
+
+</RelativeLayout>

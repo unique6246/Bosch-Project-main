@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".`1HomeActivity`">
+
+    <!-- AR Fragment to handle AR view and interactions -->
+    <fragment
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:id="@+id/ux_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="-247dp"
+        tools:layout_editor_absoluteX="-205dp"/>
+
+    <!-- Button to place the model in the AR scene -->
+    <Button
+        android:id="@+id/place_model_button"
+        android:layout_width="151dp"
+        android:layout_height="78dp"
+        android:text="@string/place_model"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ux_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/ux_fragment"
+        app:layout_constraintStart_toStartOf="@+id/ux_fragment"
+        app:layout_constraintVertical_bias="0.852"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
